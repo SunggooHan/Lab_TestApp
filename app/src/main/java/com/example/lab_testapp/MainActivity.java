@@ -215,12 +215,11 @@ public class MainActivity extends AppCompatActivity {
 
 
     private static LineDataSet createSet() {
-
         LineDataSet set = new LineDataSet(null, "Real-time data from watch");
-        set.setLineWidth(1f);
+        set.setLineWidth(3f);
         set.setDrawValues(false);
         set.setValueTextColor(R.color.white);
-        set.setColor(R.color.green);
+        set.setColor(Color.WHITE);
         set.setMode(LineDataSet.Mode.LINEAR);
         set.setDrawCircles(false);
         set.setHighLightColor(Color.rgb(190, 190, 190));
