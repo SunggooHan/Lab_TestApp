@@ -1,0 +1,19 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item
+        android:id="@+id/page_home"
+        android:enabled="true"
+        android:icon="@drawable/icon_home"
+        android:title="홈"/>
+
+    <item
+        android:id="@+id/page_calendar"
+        android:enabled="true"
+        android:icon="@drawable/icon_calendar"
+        android:title="달력"/>
+
+    <item
+        android:id="@+id/page_chart"
+        android:enabled="true"
+        android:icon="@drawable/icon_chart"
+        android:title="차트"/>
+</menu>
