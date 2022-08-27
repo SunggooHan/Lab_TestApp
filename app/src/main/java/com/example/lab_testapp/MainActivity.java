@@ -29,7 +29,6 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button graphBtn;
     TextView helloWorld;
     static LineChart hrChart;
     static LineChart scChart;
@@ -39,16 +38,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-//        graphBtn = (Button) findViewById(R.id.graphBtn);
         helloWorld = (TextView) findViewById(R.id.helloWorld);
-
-//        graphBtn.setOnClickListener(new View.OnClickListener() {
-//            public void onClick(View view) {
-//                Intent intent = new Intent(getApplicationContext(), realtimeChart.class);
-//                startActivity(intent);
-//            }
-//        });
-
         helloWorld.setText(wifiIpAddress());
         ServerThread thread = new ServerThread();
         thread.start();
