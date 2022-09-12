@@ -15,6 +15,7 @@ public class HomeActivity extends AppCompatActivity {
     private Home_Fragment fragmentHome = new Home_Fragment();
     private Calendar_Fragment fragmentCalendar = new Calendar_Fragment();
     private Chart_Fragment fragmentChart = new Chart_Fragment();
+    private DateFragment fragmentDate = new DateFragment();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,6 +49,15 @@ public class HomeActivity extends AppCompatActivity {
             }
 
             return true;
+        }
+    }
+
+    public void onFragmentChange(int index){
+        if(index == 0){
+            getSupportFragmentManager().beginTransaction().replace(R.id.menu_frame_layout, fragmentCalendar).commit();
+        }
+        else if(index == 1){
+            getSupportFragmentManager().beginTransaction().replace(R.id.menu_frame_layout, fragmentDate).commit();
         }
     }
 }
